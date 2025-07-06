@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Popup</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				padding: 20px;
+				text-align: center;
+			}
+			#count {
+				font-size: 2em;
+				margin: 10px;
+			}
+			button {
+				padding: 8px 16px;
+				font-size: 1em;
+			}
+			#counter {
+				display: flex;
+				align-items: center;
+			}
+			#incrementBtn,
+			#decrementBtn {
+				cursor: pointer;
+				background-color: #4caf50;
+				color: white;
+				border: none;
+				width: 30px;
+				height: 30px;
+				display: block;
+				border-radius: 5px;
+				user-select: none;
+				font-size: 25px;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="counter">
+			<span id="decrementBtn">-</span>
+			<span id="count">0</span>
+			<span id="incrementBtn">+</span>
+		</div>
+		<button id="openOptions">Options</button>
+		<script src="../scripts/popup.js"></script>
+	</body>
+</html>

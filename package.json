@@ -1,0 +1,32 @@
+{
+	"name": "typescript-starter-for-webextensions",
+	"version": "1.0.0",
+	"description": "A TypeScript starter template for building webextension.",
+	"license": "MIT",
+	"scripts": {
+		"build:chrome": "webpack --mode production --env target=chrome",
+		"dev:chrome": "webpack --mode development --devtool source-map --watch --env target=chrome",
+		"build:firefox": "webpack --mode production --env target=firefox",
+		"dev:firefox": "webpack --mode development --devtool source-map --watch --env target=firefox"
+	},
+	"devDependencies": {
+		"@types/chrome": "^0.0.328",
+		"@types/webextension-polyfill": "^0.12.3",
+		"copy-webpack-plugin": "^13.0.0",
+		"ts-loader": "^9.5.2",
+		"typescript": "^5.8.3",
+		"webextension-polyfill": "^0.12.0",
+		"webpack": "^5.99.9",
+		"webpack-cli": "^6.0.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ararifdotme/typescript-starter-for-webextensions.git"
+	},
+	"keywords": [],
+	"author": "A R Arif <ararif724@gmail.com> (https://ararif.me)",
+	"bugs": {
+		"url": "https://github.com/ararifdotme/typescript-starter-for-webextensions/issues"
+	},
+	"homepage": "https://github.com/ararifdotme/typescript-starter-for-webextensions#readme"
+}

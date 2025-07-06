@@ -1,0 +1,3 @@
+{
+	"permissions": ["<all_urls>", "storage", "tabs", "scripting"]
+}
