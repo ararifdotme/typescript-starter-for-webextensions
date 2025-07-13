@@ -1,3 +1,4 @@
+import '../styles/main.css';
 import browser from 'webextension-polyfill';
 
 const countSpan = document.getElementById('count');

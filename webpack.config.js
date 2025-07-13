@@ -15,6 +15,7 @@ export default function (env = {}) {
       'scripts/background': './src/scripts/background.ts',
       'scripts/content': './src/scripts/content.ts',
       'scripts/popup': './src/scripts/popup.ts',
+      'scripts/options': './src/scripts/options.ts',
     },
     output: {
       path: path.resolve('dist', target),
@@ -30,6 +31,23 @@ export default function (env = {}) {
           test: /\.ts$/,
           use: 'ts-loader',
           exclude: /node_modules/,
+        },
+        {
+          test: /\.css$/,
+          use: [
+            'style-loader',
+            'css-loader',
+            {
+              loader: 'postcss-loader',
+              options: {
+                postcssOptions: {
+                  plugins: [
+                    '@tailwindcss/postcss',
+                  ],
+                },
+              },
+            },
+          ],
         },
       ],
     },

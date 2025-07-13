@@ -7,6 +7,7 @@ A boilerplate browser extension built with **TypeScript**, **Webpack**, and **Ma
 - ✅ **Cross-browser support** (Chrome & Firefox)
 - 🧩 **Manifest V3**: Latest standard for Chrome extensions
 - ⚙️ **TypeScript**: Strongly typed for better DX
+- 🎨 **Tailwind CSS**: Utility-first CSS framework for rapid UI development
 - 🧱 **Modular Structure**: Background, content, popup, and service layers
 - ⏱️ **Task Scheduler**: Built-in example service
 - 🧩 **webextension-polyfill**: Unified `browser` API across all browsers
@@ -40,6 +41,18 @@ A boilerplate browser extension built with **TypeScript**, **Webpack**, and **Ma
 │       └── scheduler.ts
 │       └── ... Other services
 ```
+
+## Styling
+
+This project includes **Tailwind CSS** for styling. The main stylesheet is located at `src/styles/main.css` and uses Tailwind directives. The build process automatically processes these styles and includes them in your extension.
+
+You can use Tailwind utility classes directly in your HTML files:
+
+```html
+<div class="bg-blue-500 text-white p-4 rounded-lg">Styled with Tailwind CSS</div>
+```
+
+The Tailwind configuration can be customized in `tailwind.config.js`.
 
 ## Getting Started
 
